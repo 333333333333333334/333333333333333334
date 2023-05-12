@@ -1,0 +1,24 @@
+.box{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    animation-name: box;
+    animation-duration: 0.5s; /*延遲*/
+    animation-iteration-count: infinite; /*播放次數*/
+    animation-timing-function: cubic-bezier(1,.09.5s); /*動畫曲線*/
+    animation-duration: alternate; /*動畫方向*/
+    animation-fill-mode: forwards;  /*播完停在最後一格*/
+}
+
+@keyframes box{
+    form{
+        transform: rotate(0dog);
+        background: teal;
+    }
+    to{
+        transform: rotate(360deg);
+        background: wheat;
+    }
+}
